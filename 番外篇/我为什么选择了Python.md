@@ -1,37 +1,37 @@
-## 我为什么选择了Python
+## 我为什么选择了 Python
 
-目前，Python语言的发展势头在国内国外都是不可阻挡的，Python凭借其简单优雅的语法，强大的生态圈从众多语言中脱颖而出，如今已经是稳坐编程语言排行榜前三的位置。国内很多Python开发者都是从Java开发者跨界过来的，我自己也不例外。我简单的跟大家交代一下，我为什么选择了Python。
+目前，Python 语言的发展势头在国内国外都是不可阻挡的，Python 凭借其简单优雅的语法，强大的生态圈从众多语言中脱颖而出，如今已经是稳坐编程语言排行榜前三的位置。国内很多 Python 开发者都是从 Java 开发者跨界过来的，我自己也不例外。我简单的跟大家交代一下，我为什么选择了 Python。
 
 ### Python vs. Java
 
-我们通过几个例子来比较一下，做同样的事情Java和Python的代码都是怎么写的。
+我们通过几个例子来比较一下，做同样的事情 Java 和 Python 的代码都是怎么写的。
 
-例子1：在终端中输出“hello, world”。
+例子 1：在终端中输出“hello, world”。
 
-Java代码：
+Java 代码：
 
 ```Java
 class Test {
-	
+
     public static void main(String[] args) {
         System.out.println("hello, world");
     }
 }
 ```
 
-Python代码：
+Python 代码：
 
-```Python
+```py
 print('hello, world')
 ```
 
-例子2：从1到100求和。
+例子 2：从 1 到 100 求和。
 
-Java代码：
+Java 代码：
 
 ```Java
 class Test {
-    
+
     public static void main(String[] args) {
         int total = 0;
         for (int i = 1; i <= 100; i += 1) {
@@ -42,15 +42,15 @@ class Test {
 }
 ```
 
-Python代码：
+Python 代码：
 
-```Python
+```py
 print(sum(range(1, 101)))
 ```
 
-例子3：双色球随机选号。
+例子 3：双色球随机选号。
 
-Java代码：
+Java 代码：
 
 ```Java
 import java.util.List;
@@ -93,9 +93,9 @@ class Test {
 }
 ```
 
-Python代码：
+Python 代码：
 
-```Python
+```py
 from random import randint, sample
 
 # 初始化备选红色球
@@ -114,4 +114,4 @@ for index, ball in enumerate(selected_balls):
 print()
 ```
 
-相信，看完这些例子后，你一定感受到了我选择了Python是有道理的。
+相信，看完这些例子后，你一定感受到了我选择了 Python 是有道理的。

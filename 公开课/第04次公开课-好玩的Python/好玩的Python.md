@@ -37,7 +37,7 @@ ipython 最直观的优点：
 
 2. 加载图片。
 
-   ```Python
+   ```py
    from PIL import Image
 
    chiling = Image.open('chiling.jpg')
@@ -55,7 +55,7 @@ ipython 最直观的优点：
 
 4. 图像剪裁和粘贴。
 
-   ```Python
+   ```py
    rect = 220, 690, 265, 740
    watch = chiling.crop(rect)
    watch.show()
@@ -66,14 +66,14 @@ ipython 最直观的优点：
 
 5. 生成镜像。
 
-   ```Python
+   ```py
    chiling2 = chiling.transpose(Image.FLIP_LEFT_RIGHT)
    chiling2.show()
    ```
 
 6. 生成缩略图。
 
-   ```Python
+   ```py
    width, height = chiling.size
    width, height = int(width * 0.4), int(height * 0.4)
    chiling.thumbnail((width, height))
@@ -81,7 +81,7 @@ ipython 最直观的优点：
 
 7. 合成图片。
 
-   ```Python
+   ```py
    frame = Image.open('frame.jpg')
    frame.show()
    frame.paste(chiling, (210, 150))
@@ -109,7 +109,7 @@ ipython 最直观的优点：
 
 2. 登录微信。
 
-   ```Python
+   ```py
    import itchat
 
    itchat.auto_login()
@@ -119,7 +119,7 @@ ipython 最直观的优点：
 
 3. 查找自己的朋友。
 
-   ```Python
+   ```py
    friends_list = itchat.get_friends(update=True)
    print(len(friends_list))
    luohao = friends_list[0]
@@ -132,7 +132,7 @@ ipython 最直观的优点：
 
 4. 随机选出 5 个朋友，获得他们的用户名、昵称、签名。
 
-   ```Python
+   ```py
    lucky_friends = random.sample(friends_list[1:], 5)
    props = ['NickName', 'Signature', 'City']
    for friend in lucky_friends:
@@ -143,13 +143,13 @@ ipython 最直观的优点：
 
 5. 给朋友发送文字消息。
 
-   ```Python
+   ```py
    itchat.send_msg('急需一个红包来拯救堕落的灵魂！！！', toUserName='@8e06606db03f0e28d0ff884083f727e6')
    ```
 
 6. 群发视频给幸运的朋友们。
 
-   ```Python
+   ```py
    lucky_friends = random.sample(friends_list[1:], 5)
    for friend in lucky_friends:
        username = friend['UserName']
@@ -176,7 +176,7 @@ ipython 最直观的优点：
 
 2. 爬取新闻数据或者通过 API 接口获取新闻数据。
 
-   ```Python
+   ```py
    import requests
 
    resp = requests.get('http://api.tianapi.com/allnews/?key=请使用自己申请的Key&col=7&num=50')
@@ -186,7 +186,7 @@ ipython 最直观的优点：
 
 3. 使用反序列化将 JSON 字符串解析为字典并获取新闻列表。
 
-   ```Python
+   ```py
    import json
 
    newslist = json.loads(resp.text)['newslist']
@@ -194,7 +194,7 @@ ipython 最直观的优点：
 
 4. 对新闻列表进行循环遍历，找到感兴趣的新闻，例如：华为。
 
-   ```Python
+   ```py
    for news in newslist:
        title = news['title']
        url = news['url']
@@ -205,7 +205,7 @@ ipython 最直观的优点：
 
 5. 调用短信网关发送短信到手机上，告知关注的新闻标题并给出链接。
 
-   ```Python
+   ```py
    import re
 
    pattern = re.compile(r'https*:\/\/[^\/]*\/(?P<url>.*)')
