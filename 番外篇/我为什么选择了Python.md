@@ -4,7 +4,7 @@
 
 ### Python vs. Java
 
-我们通过几个例子来比较一下，做同样的事情 Java 和 Python 的代码都是怎么写的。
+通过几个例子来比较一下，做同样的事情 Java 和 Python 的代码都是怎么写的。
 
 例子 1：在终端中输出“hello, world”。
 

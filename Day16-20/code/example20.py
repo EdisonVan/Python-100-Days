@@ -5,7 +5,7 @@
 multiprocessing.Queue
 守护线程 - daemon thread
 守护进程 - firewalld / httpd / mysqld
-在系统停机的时候不保留的进程 - 不会因为进程还没有执行结束而阻碍系统停止
+在系统停机的时不保留的进程 - 不会因为进程还没有执行结束而阻碍系统停止
 """
 from threading import Thread
 from time import sleep

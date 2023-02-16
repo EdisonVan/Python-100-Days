@@ -41,4 +41,4 @@ if __name__ == '__main__':
     time.sleep(2)
     print('账户余额为: ￥%d元' % account.balance)
 
-# 想一想结果为什么不是我们期望的100元
+# 想一想结果为什么不是期望的100元

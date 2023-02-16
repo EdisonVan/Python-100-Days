@@ -23,8 +23,8 @@ print(teacher.name)
 print(teacher.age)
 print(teacher.title)
 
-# 请思考如何将下面JSON格式的天气数据转换成对象并获取我们需要的信息
-# 稍后我们会讲解如何通过网络API获取我们需要的JSON格式的数据
+# 请思考如何将下面JSON格式的天气数据转换成对象并获取需要的信息
+# 稍后会讲解如何通过网络API获取需要的JSON格式的数据
 """
     {
         "wendu": "29",

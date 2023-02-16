@@ -1,4 +1,4 @@
-## Zen of Python（Python之禅）
+## Zen of Python（Python 之禅）
 
 1. Beautiful is better than ugly. （优美比丑陋好）<br>
 2. Explicit is better than implicit.（清晰比晦涩好）<br>
@@ -18,8 +18,7 @@
 16. Although never is often better than \*right\* now.（不做比盲目去做好[^2]）<br>
 17. If the implementation is hard to explain, it's a bad idea.（如果一个实现方案难于理解，它通常不是一个好的方案）<br>
 18. If the implementation is easy to explain, it may be a good idea.（如果一个实现方案易于理解，它很有可能是一个好的方案）<br>
-19. Namespaces are one honking great idea -- let's do more of those!（命名空间非常有用，我们应当多加利用）<br>
+19. Namespaces are one honking great idea -- let's do more of those!（命名空间非常有用，应当多加利用）<br>
 
-[^1]:这里指的是 Python 之父 Guido van Rossumm。
-[^2]:极限编程中的YAGNI原则
-
+[^1]: 这里指的是 Python 之父 Guido van Rossumm。
+[^2]: 极限编程中的 YAGNI 原则

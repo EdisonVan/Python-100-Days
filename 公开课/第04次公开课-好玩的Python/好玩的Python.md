@@ -156,7 +156,7 @@ ipython 最直观的优点：
        itchat.send_video('/Users/Hao/Desktop/my_test_video.mp4', toUserName=username)
    ```
 
-利用 itchat 还能做很多事情，比如有好友给自己发了消息又撤回了，如果想查看这些被撤回的消息，itchat 就可以做到（注册一个接收消息的钩子函数，请参考[CSDN 上的一篇文章](https://blog.csdn.net/enweitech/article/details/79585043)）；再比如，有时候我们想知道某个好友有没有把我们删除或者拉入黑名单，也可以利用 itchat 封装的群聊功能，非好友和黑名单用户不会被拉入群聊，通过创建群聊函数的返回值就可以判定你和指定的人之间的关系。
+利用 itchat 还能做很多事情，比如有好友给自己发了消息又撤回了，如果想查看这些被撤回的消息，itchat 就可以做到（注册一个接收消息的钩子函数，请参考[CSDN 上的一篇文章](https://blog.csdn.net/enweitech/article/details/79585043)）；再比如，有时想知道某个好友有没有把删除或者拉入黑名单，也可以利用 itchat 封装的群聊功能，非好友和黑名单用户不会被拉入群聊，通过创建群聊函数的返回值就可以判定你和指定的人之间的关系。
 
 ### 不用客户端查看热点新闻
 
@@ -182,7 +182,7 @@ ipython 最直观的优点：
    resp = requests.get('http://api.tianapi.com/allnews/?key=请使用自己申请的Key&col=7&num=50')
    ```
 
-   > 说明：上面使用了天行数据提供的数据接口，需要的话可以自行去[天行数据](https://www.tianapi.com/)的网站注册开通，调用接口的时候要填写注册成功后系统分配给你的 key。
+   > 说明：上面使用了天行数据提供的数据接口，需要的话可以自行去[天行数据](https://www.tianapi.com/)的网站注册开通，调用接口的时要填写注册成功后系统分配给你的 key。
 
 3. 使用反序列化将 JSON 字符串解析为字典并获取新闻列表。
 
