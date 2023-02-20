@@ -8,7 +8,7 @@
 
 Hexo 是一个快速、简洁且高效的博客框架，它能够将[Markdown 格式](https://zh.wikipedia.org/zh-hans/Markdown)的文档渲染成漂亮的网页，这样就可以在很短的时间内迅速的创建出网站的静态内容，而 Markdown 格式对程序员来说相信并不陌生。要想使用 Hexo 来搭建自己的博客，我实在想不出有什么教程比[官方文档](https://hexo.io/zh-cn/)更好，强烈建议大家阅读官方文档来了解 Hexo，下面我只做一个简要的使用说明。
 
-> 说明：**Markdown**是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，同时也对图片、图表、数学公式提供了支持，可以用来书写电子书、软件文档等，同时也可以非常方便的转换为 HTML 页面或者是 PDF 文档。
+> **Markdown**是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，同时也对图片、图表、数学公式提供了支持，可以用来书写电子书、软件文档等，同时也可以非常方便的转换为 HTML 页面或是 PDF 文档。
 
 要使用 Hexo，首先得确保计算机上已经安装了[node.js](https://nodejs.org/en/)环境和[git](https://git-scm.com/)环境，前者是一个能够在服务器端运行 JavaScript 代码的环境，后者是版本控制工具。安装 node.js 主要是为了使用它的包管理工具 npm，所以不需要先系统的学习 node.js 的知识；而安装 git 是为了利用版本控制系统克隆代码已经将博客项目托管到三方平台，如果想学习 git，最好的资料是官方网站上的[_Git Pro_](https://git-scm.com/book/zh/v2)和[《Git 权威指南》](http://www.worldhello.net/gotgit/index.html)。安装完成后，可以通过下面的命令来确认 node.js 环境以及它的包管理工具是否安装成功。
 
@@ -39,7 +39,7 @@ npm install -g hexo-cli
 
 ### 搭建博客
 
-> 说明：以下内容基本上来自于 Hexo 的官方文档，推荐大家阅读官方文档。
+> 以下内容基本上来自于 Hexo 的官方文档，推荐大家阅读官方文档。
 
 先通过下面的命令来创建一个专门保存博客项目的文件夹，该命令会从 github 上克隆博客项目和默认的主题。
 
@@ -65,7 +65,7 @@ drwxr-xr-x    3 Hao  staff      96  8  8 01:15 source
 drwxr-xr-x    3 Hao  staff      96  8  8 01:15 themes
 ```
 
-> 说明：Windows 环境命令行提示符中可以使用 dir 命令查看目录结构。需要说明的是：`_config.yml`是博客项目的配置文件；`package.json`是项目的依赖项文件；`scaffolds`保存了 Markdown 文件的模板，也就是向新添加的 Markdown 文件中默认填充的内容；`source`目录下有一个名为`_post`的目录，稍后可以将编写好的 Markdown 文件放到该目录，这样就可以利用 Hexo 将 Markdown 文件处理成博客的静态页面，生成的静态页面将置于`public`目录下；`themes`文件夹保存了博客使用的主题。
+> Windows 环境命令行提示符中可以使用 dir 命令查看目录结构。需要说明的是：`_config.yml`是博客项目的配置文件；`package.json`是项目的依赖项文件；`scaffolds`保存了 Markdown 文件的模板，也就是向新添加的 Markdown 文件中默认填充的内容；`source`目录下有一个名为`_post`的目录，稍后可以将编写好的 Markdown 文件放到该目录，这样就可以利用 Hexo 将 Markdown 文件处理成博客的静态页面，生成的静态页面将置于`public`目录下；`themes`文件夹保存了博客使用的主题。
 
 然后通过下面的命令来安装项目所需的依赖项（`package.json`文件指明了这些依赖项）。
 
@@ -320,7 +320,7 @@ hexo server -p 8000 -o
    hexo deploy -g
    ```
 
-   或者
+   或
 
    ```Shell
    hexo generate -d
@@ -334,9 +334,9 @@ hexo server -p 8000 -o
 
 ![](./res/wanwang.png)
 
-> 说明：目前国内对域名的管理日趋严格，在购买域名时需要填写一大堆的个人信息，进行实名认证后才能获得域名，这一点相信大家能够理解。
+> 目前国内对域名的管理日趋严格，在购买域名时需要填写一大堆的个人信息，进行实名认证后才能获得域名，这一点相信大家能够理解。
 
-比如说，我现在已经购买了一个名为“jackfrued.top”的域名，如何让它跟“jackfrued.github.io”这个域名做一个绑定呢，可以利用[阿里云控制台](https://dns.console.aliyun.com/)或者[DNSPod](https://www.dnspod.cn/)来做一个域名解析服务。在域名解析平台登录成功后，可以添加或选择自己的域名来配置域名解析。点击“添加记录”按钮，创建一个类型为 CNAME 的域名解析，CNAME 类型的解析代表将一个域名解析到另一个域名，如下图所示。
+比如说，我现在已经购买了一个名为“jackfrued.top”的域名，如何让它跟“jackfrued.github.io”这个域名做一个绑定呢，可以利用[阿里云控制台](https://dns.console.aliyun.com/)或[DNSPod](https://www.dnspod.cn/)来做一个域名解析服务。在域名解析平台登录成功后，可以添加或选择自己的域名来配置域名解析。点击“添加记录”按钮，创建一个类型为 CNAME 的域名解析，CNAME 类型的解析代表将一个域名解析到另一个域名，如下图所示。
 
 ![](./res/dns-configuration.png)
 

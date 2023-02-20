@@ -497,7 +497,7 @@ except (KeyError, TypeError, ValueError):
 
 ### 使用 Lint 工具检查你的代码规范
 
-阅读下面的代码，看看你能看出哪些地方是有毛病的或者说不符合 Python 的编程规范的。
+阅读下面的代码，看看你能看出哪些地方是有毛病的或说不符合 Python 的编程规范的。
 
 ```py
 from enum import *

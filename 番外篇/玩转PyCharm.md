@@ -10,11 +10,11 @@ PyCharm 是由 JetBrains 公司开发的提供给 Python 专业的开发者的�
 
 ### 首次使用的设置
 
-第一次使用 PyCharm 时，会有一个导入设置的向导，如果之前没有使用 PyCharm 或者没有保存过设置的就直接选择“Do not import settings”进入下一步即可，下面是我在 macOS 系统下第一次使用 PyCharm 时的截图。
+第一次使用 PyCharm 时，会有一个导入设置的向导，如果之前没有使用 PyCharm 或没有保存过设置的就直接选择“Do not import settings”进入下一步即可，下面是我在 macOS 系统下第一次使用 PyCharm 时的截图。
 
 ![](res/pycharm-import-settings.png)
 
-专业版的 PyCharm 是需要激活的，**强烈建议大家在条件允许的情况下支付费用来支持优秀的产品**，如果不用做商业用途或者不需要使用 PyCharm 的高级功能，可以暂时选择试用 30 天或者使用社区版的 PyCharm。如果你是一名学生，希望购买 PyCharm 来使用，可以看看[教育优惠官方申请指南](https://sales.jetbrains.com/hc/zh-cn/articles/207154369)。如下图所示，需要点击“Evaluate”按钮来试用专业版 PyCharm。
+专业版的 PyCharm 是需要激活的，**强烈建议大家在条件允许的情况下支付费用来支持优秀的产品**，如果不用做商业用途或不需要使用 PyCharm 的高级功能，可以暂时选择试用 30 天或使用社区版的 PyCharm。如果你是一名学生，希望购买 PyCharm 来使用，可以看看[教育优惠官方申请指南](https://sales.jetbrains.com/hc/zh-cn/articles/207154369)。如下图所示，需要点击“Evaluate”按钮来试用专业版 PyCharm。
 
 ![](res/pycharm-activation.png)
 
@@ -58,7 +58,7 @@ PyCharm 为写 Python 代码提供了自动补全和高亮语法功能，这也�
 
 ![](/Users/Hao/Desktop/Python-Core-50-Courses/res/pycharm-settings.png)
 
-PyCharm 的菜单项中有一个非常有用的“Code”菜单，菜单中提供了自动生成代码、自动补全代码、格式化代码、移动代码等选项，这些功能对开发者来说是非常有用的，大家可以尝试使用这些菜单项或者记住它们对应的快捷键，例如在 macOS 上，格式化代码这个菜单项对应的快捷键是`alt+command+L`。除此之外，“Refactor”菜单也非常有用，它提供了一些重构代码的选项。所谓重构是在不改变代码执行结果的前提下调整代码的结构，这也是资深程序员的一项重要技能。还有一个值得一提的菜单是“VCS”，VCS 是“Version Control System”（版本控制系统）的缩写，这个菜单提供了对代码版本管理的支持。版本控制的知识会在其他的课程中为大家讲解。
+PyCharm 的菜单项中有一个非常有用的“Code”菜单，菜单中提供了自动生成代码、自动补全代码、格式化代码、移动代码等选项，这些功能对开发者来说是非常有用的，大家可以尝试使用这些菜单项或记住它们对应的快捷键，例如在 macOS 上，格式化代码这个菜单项对应的快捷键是`alt+command+L`。除此之外，“Refactor”菜单也非常有用，它提供了一些重构代码的选项。所谓重构是在不改变代码执行结果的前提下调整代码的结构，这也是资深程序员的一项重要技能。还有一个值得一提的菜单是“VCS”，VCS 是“Version Control System”（版本控制系统）的缩写，这个菜单提供了对代码版本管理的支持。版本控制的知识会在其他的课程中为大家讲解。
 
 下表列出了一些 PyCharm 中特别常用的快捷键，当然如果愿意，也可以通过设置窗口中“Keymap”菜单项自定义快捷键，PyCharm 本身也针对不同的操作系统和使用习惯对快捷键进行了分组。
 
