@@ -76,4 +76,4 @@ PyCharm 的菜单项中有一个非常有用的“Code”菜单，菜单中提�
 | `F2`                                          | 快速定位到错误代码                     |
 | `command+ alt + F7`                           | 查看哪些地方用到了指定的函数、类、方法 |
 
-> **说明**：Windows 系统下如果使用 PyCharm 的默认设置，可以将上面的`command`键换成`ctrl`键即可，唯一的例外是`ctrl + space`那个快捷键，因为它跟 Windows 系统切换输入法的快捷键是冲突的，所以在 Windows 系统下默认没有与之对应的快捷键。
+> Windows 系统下如果使用 PyCharm 的默认设置，可以将上面的`command`键换成`ctrl`键即可，唯一的例外是`ctrl + space`那个快捷键，因为它跟 Windows 系统切换输入法的快捷键是冲突的，所以在 Windows 系统下默认没有与之对应的快捷键。

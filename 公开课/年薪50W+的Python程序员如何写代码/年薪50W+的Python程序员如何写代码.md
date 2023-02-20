@@ -187,7 +187,7 @@ for _ in range(num):
 
 Java 的版本：
 
-> **说明**：JDK 1.6 以前，需要通过套接字编程来实现，具体又可以分为多线程和 NIO 两种做法。JDK 1.6 以后，可以使用`com.sun.net.httpserver`包提供的`HttpServer`类来实现。
+> JDK 1.6 以前，需要通过套接字编程来实现，具体又可以分为多线程和 NIO 两种做法。JDK 1.6 以后，可以使用`com.sun.net.httpserver`包提供的`HttpServer`类来实现。
 
 ```Java
 import com.sun.net.httpserver.HttpExchange;
@@ -295,7 +295,7 @@ for n in range(1, 121):
     print(f'{n}: {fib(n)}')
 ```
 
-> **说明**：通过 Python 标准库`functools`模块的`lru_cache`装饰器为`fib`函数加上缓存代理，缓存函数执行的中间结果，优化代码的性能。
+> 通过 Python 标准库`functools`模块的`lru_cache`装饰器为`fib`函数加上缓存代理，缓存函数执行的中间结果，优化代码的性能。
 
 单例模式在 Python 中可以通过自定义的装饰器或元类来实现。
 
@@ -317,7 +317,7 @@ def singleton(cls):
         return instances[cls]
 ```
 
-> **说明**：需要实现单例模式的类只需要添加上面的装饰器即可。
+> 需要实现单例模式的类只需要添加上面的装饰器即可。
 
 原型模式在 Python 中可以通过元类来实现。
 
@@ -333,7 +333,7 @@ class PrototypeMeta(type):
             copy.deepcopy(self) if is_deep else copy.copy(self)
 ```
 
-> **说明**：通过元类给指定了`metaclass=PrototypeMeta`的类添加一个`clone`方法实现对象克隆，利用 Python 标准库`copy`模块的`copy`和`deepcopy`分别实现浅拷贝和深拷贝。
+> 通过元类给指定了`metaclass=PrototypeMeta`的类添加一个`clone`方法实现对象克隆，利用 Python 标准库`copy`模块的`copy`和`deepcopy`分别实现浅拷贝和深拷贝。
 
 #### 数据采集和数据分析从未如此简单
 
