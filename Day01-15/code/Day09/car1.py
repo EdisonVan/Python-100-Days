@@ -52,7 +52,7 @@ car.brand = "Benz"
 # 使用__slots__属性限制后下面的代码将产生异常
 # car.current_speed = 80
 print(car)
-# 如果提供了删除器可以执行下面的代码
+# 如果提供了删除器可执行下面的代码
 # del car.brand
 # 属性的实现
 print(Car.brand)

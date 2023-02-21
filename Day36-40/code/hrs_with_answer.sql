@@ -98,7 +98,7 @@ from tb_emp t1, tb_dept t2, (
 
 -- 查询主管的姓名和职位
 -- 提示：尽量少用in/not in运算，尽量少用distinct操作
--- 可以使用存在性判断（exists/not exists）替代集合运算和去重操作
+-- 可使用存在性判断（exists/not exists）替代集合运算和去重操作
 select ename, job from tb_emp where eno in (
 	select distinct mgr from tb_emp where mgr is not null
 );

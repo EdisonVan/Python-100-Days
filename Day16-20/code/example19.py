@@ -8,8 +8,8 @@
 1. 创建Thread对象指定target和args属性并通过start方法启动线程
 2. 继承Thread类并重写run方法来定义线程执行的任务
 3. 创建线程池对象ThreadPoolExecutor并通过submit来提交要执行的任务
-第3种方式可以通过Future对象的result方法在将来获得线程的执行结果
-也可以通过done方法判定线程是否执行结束
+第3种方式可通过Future对象的result方法在将来获得线程的执行结果
+也可通过done方法判定线程是否执行结束
 - 多进程
 - 异步I/O
 """

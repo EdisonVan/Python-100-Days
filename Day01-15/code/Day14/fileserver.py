@@ -38,7 +38,7 @@ def main():
     while True:
         client, addr = server.accept()
         # 用一个字典(键值对)来保存要发送的各种数据
-        # 待会可以将字典处理成JSON格式在网络上传递
+        # 待会可将字典处理成JSON格式在网络上传递
         FileTransferHandler(client).start()
 
 

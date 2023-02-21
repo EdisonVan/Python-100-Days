@@ -41,7 +41,7 @@ if __name__ == '__main__':
         tri = Triangle(a, b, c)
         print('周长:', tri.perimeter())
         print('面积:', tri.area())
-        # 如果传入对象作为方法参数也可以通过类调用实例方法
+        # 如果传入对象作为方法参数也可通过类调用实例方法
         # print('周长:', Triangle.perimeter(tri))
         # print('面积:', Triangle.area(tri))
         # 看看下面的代码就知道其实二者本质上是一致的

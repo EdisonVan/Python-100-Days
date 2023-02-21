@@ -38,7 +38,7 @@ def reverse_str5(str):
     str_list = list(str)
     str_len = len(str)
     # 使用zip函数将两个序列合并成一个产生元组的迭代器
-    # 每次正好可以取到一前一后两个下标来实现元素的交换
+    # 每次正好可取到一前一后两个下标来实现元素的交换
     for i, j in zip(range(str_len // 2), range(str_len - 1, str_len // 2, -1)):
         str_list[i], str_list[j] = str_list[j], str_list[i]
     # 将列表元素连接成字符串

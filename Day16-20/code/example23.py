@@ -1,5 +1,5 @@
 """
-协程（coroutine）- 可以在需要时进行切换的相互协作的子程序
+协程（coroutine）- 可在需要时进行切换的相互协作的子程序
 """
 import asyncio
 
