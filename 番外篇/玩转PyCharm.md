@@ -4,7 +4,7 @@ PyCharm 是由 JetBrains 公司开发的提供给 Python 专业的开发者的�
 
 ### PyCharm 的下载和安装
 
-可在[JetBrains 公司的官方网站](https://www.jetbrains.com/)找到 PyCharm 的[下载链接](https://www.jetbrains.com/pycharm/download/)，有两个可供下载的版本，一个是社区版（PyCharm CE），一个是专业版（PyCharm Professional）。社区版在 Apache 许可证下发布，可免费使用；专业版在专用许可证下发布，需要购买授权后才能使用，但新用户可试用 30 天。很显然，专业版提供了更为强大的功能和对企业级开发的各种支持，但是对于初学者来说，社区版已经足够强大和好用了。安装 PyCharm 只需要直接运行下载的安装程序，然后持续的点击“Next”（下一步）按钮就可啦。下面是我在 Windows 系统下安装 PyCharm 的截图，安装完成后点击“Finish”（结束）按钮关闭安装向导，然后可通过双击桌面的快捷方式来运行 PyCharm。
+可在[JetBrains 公司的官方网站](https://www.jetbrains.com/)找到 PyCharm 的[下载链接](https://www.jetbrains.com/pycharm/download/)，有两个可供下载的版本，一个是社区版（PyCharm CE），一个是专业版（PyCharm Professional）。社区版在 Apache 许可证下发布，可免费使用；专业版在专用许可证下发布，需要购买授权后才能使用，但新用户可试用 30 天。很显然，专业版提供了更为强大的功能和对企业级开发的各种支持，但是对于初学者来说，社区版已经足够强大和好用了。安装 PyCharm 只需要直接运行下载的安装程序，持续的点击“Next”（下一步）按钮就可啦。下面是我在 Windows 系统下安装 PyCharm 的截图，安装完成后点击“Finish”（结束）按钮关闭安装向导，可通过双击桌面的快捷方式来运行 PyCharm。
 
 ![](res/pycharm-installation.png)
 
@@ -26,7 +26,7 @@ PyCharm 是由 JetBrains 公司开发的提供给 Python 专业的开发者的�
 
 ![](res/pycharm-create-launcher.png)
 
-然后可选择需要安装哪些插件，可暂时什么都不安装，等需要的时再来决定。
+可选择需要安装哪些插件，可暂时什么都不安装，等需要的时再来决定。
 
 ![](res/pycharm-install-plugins.png)
 
