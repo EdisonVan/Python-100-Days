@@ -49,31 +49,31 @@ Redis 是 REmote DIctionary Server 的缩写，它是一个用 ANSI C 编写的�
 
 下载：
 
-```Bash
+```shell
 wget https://download.redis.io/releases/redis-5.0.10.tar.gz
 ```
 
 解压缩和解归档：
 
-```Bash
+```shell
 tar -zxf redis-5.0.10.tar.gz
 ```
 
 进入 Redis 源代码目录：
 
-```Bash
+```shell
 cd redis-5.0.10
 ```
 
 构建和安装：
 
-```Bash
+```shell
 make && make install
 ```
 
 在 redis 源代码目录下有一个名为 redis.conf 的配置文件，可先查看一下该文件。
 
-```Bash
+```shell
 vim redis.conf
 ```
 
@@ -115,7 +115,7 @@ vim redis.conf
 
 接下来启动 Redis 服务器，下面的方式将以默认的配置启动 Redis 服务。
 
-```Bash
+```shell
 redis-server
 ```
 
@@ -123,38 +123,38 @@ redis-server
 
 **方式一**：通过参数指定认证口令和 AOF 持久化方式。
 
-```Bash
+```shell
 redis-server --requirepass yourpass --appendonly yes
 ```
 
 **方式二**：通过指定的配置文件来修改 Redis 的配置。
 
-```Bash
+```shell
 redis-server /root/redis-5.0.10/redis.conf
 ```
 
 下面使用第一种方式来启动 Redis 并将其置于后台运行，将 Redis 产生的输出重定向到名为 redis.log 的文件中。
 
-```Bash
+```shell
 redis-server --requirepass yourpass > redis.log &
 ```
 
 可通过`ps`或`netstat`来检查 Redis 服务器是否启动成功。
 
-```Bash
+```shell
 ps -ef | grep redis-server
 netstat -nap | grep redis-server
 ```
 
-接下来，尝试用 Redis 命令行工具`redis-cli`去连接服务器，该工具默认连接本机的`6379`端口，如果需要指定 Redis 服务器和端口，可使用`-h`和`-p`参数分别进行指定。
+尝试用 Redis 命令行工具`redis-cli`去连接服务器，该工具默认连接本机的`6379`端口，如果需要指定 Redis 服务器和端口，可使用`-h`和`-p`参数分别进行指定。
 
-```Bash
+```shell
 redis-cli
 ```
 
 进入命令行工具后，就可通过 Redis 的命令来操作 Redis 服务器，如下所示。
 
-```Bash
+```shell
 127.0.0.1:6379> auth yourpass
 OK
 127.0.0.1:6379> ping
@@ -168,7 +168,7 @@ Redis 有着非常丰富的数据类型，也有很多的命令来操作这些�
 
 > 上面的插图来自付磊和张益军编著的《Redis 开发与运维》一书。
 
-```Bash
+```shell
 127.0.0.1:6379> set username admin
 OK
 127.0.0.1:6379> get username
@@ -294,13 +294,13 @@ OK
 
 可使用 pip 安装名为`redis`的三方库，该三方库的核心是一个名为`Redis`的类，`Redis`对象代表一个 Redis 客户端，通过该客户端可向 Redis 服务器发送命令并获取执行的结果。上面在 Redis 客户端中使用的命令基本上就是`Redis`对象可接收的消息，所以如果了解了 Redis 的命令就可在 Python 中玩转 Redis。
 
-```Bash
+```shell
 pip3 install redis
 ```
 
 进入 Python 交互式环境，使用`redis`三方库来操作 Redis。
 
-```Bash
+```shell
 >>> import redis
 >>>
 >>> client = redis.Redis(host='127.0.0.1', port=6379, password='yourpass')
@@ -335,7 +335,7 @@ MongoDB 将数据存储为一个文档，一个文档由一系列的“键值对
 
 下载服务器和命令行的 RPM 安装包。
 
-```Bash
+```shell
 wget https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.4/x86_64/RPMS/mongodb-org-server-4.4.2-1.el7.x86_64.rpm
 rpm -ivh mongodb-org-server-4.4.2-1.el7.x86_64.rpm
 wget https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.4/x86_64/RPMS/mongodb-org-shell-4.4.2-1.el7.x86_64.rpm
@@ -344,19 +344,19 @@ rpm -ivh mongodb-org-shell-4.4.2-1.el7.x86_64.rpm
 
 启动 MongoDB 服务器，需要先创建保存数据的文件夹。
 
-```Bash
+```shell
 mkdir -p /data/db
 ```
 
 修改 MongoDB 的配置文件，将其中`bindIp`选项的值修改为本机 IP 地址而不是默认的`127.0.0.1`，本机 IP 地址可通过`ifconfig`命令进行查看。
 
-```Bash
+```shell
 vim /etc/mongod.conf
 ```
 
 使用`systemctl`命令启动服务。
 
-```Bash
+```shell
 systemctl start mongod
 ```
 
@@ -378,7 +378,7 @@ systemctl start mongod
 
 0. 启动命令行工具，进入交互式环境。
 
-   ```Bash
+   ```shell
    mongo
    ```
 

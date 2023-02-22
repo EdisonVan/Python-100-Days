@@ -42,7 +42,7 @@ PyCharm 是由 JetBrains 公司开发的提供给 Python 专业的开发者的�
 
 ![](res/pycharm-project-wizard.png)
 
-接下来，要为项目创建专属的虚拟环境，每个 Python 项目最好都在自己专属的虚拟环境中运行，因为每个项目对 Python 解释器和三方库的需求并不相同，虚拟环境对不同的项目进行了隔离。在上图所示的界面在，可选择新建虚拟环境（New environment using Virtualenv），这里的“Virtualenv”是 PyCharm 默认选择的创建虚拟环境的工具，就保留这个默认的选项就可了。
+要为项目创建专属的虚拟环境，每个 Python 项目最好都在自己专属的虚拟环境中运行，因为每个项目对 Python 解释器和三方库的需求并不相同，虚拟环境对不同的项目进行了隔离。在上图所示的界面在，可选择新建虚拟环境（New environment using Virtualenv），这里的“Virtualenv”是 PyCharm 默认选择的创建虚拟环境的工具，就保留这个默认的选项就可了。
 
 项目创建完成后就可开始新建各种文件来书写 Python 代码了，如下图所示。左侧是项目浏览器，可看到刚才创建的项目文件夹以及虚拟环境文件夹。可在项目上点击鼠标右键，选择“New”，在选择“Python File”来创建 Python 代码文件，下图中创建了两个 Python 文件，分别是`poker_game.py`和`salary_system.py`。当然，如果愿意，也可使用复制粘贴的方式把其他地方的 Python 代码文件复制到项目文件夹下。
 
