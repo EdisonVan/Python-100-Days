@@ -1,6 +1,6 @@
 ## 好玩的 Python
 
-因为下面的代码都非常简单，简单到直接使用 Python 的交互式环境就能完成。当然，官方 Python 自带的交互式环境比较难用，推荐大家使用 ipython，可使用下面的命令来安装 ipython，安装成功后键入 ipython 命令就能进入交互式环境。
+因为下面的代码都非常简单，简单到直接使用 Python 的交互式环境就能完成。官方 Python 自带的交互式环境比较难用，推荐大家使用 ipython，可使用下面的命令来安装 ipython，安装成功后键入 ipython 命令就能进入交互式环境。
 
 ```Shell
 pip install ipython

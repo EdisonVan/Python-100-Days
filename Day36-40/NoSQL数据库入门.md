@@ -152,7 +152,7 @@ netstat -nap | grep redis-server
 redis-cli
 ```
 
-进入命令行工具后，就可通过 Redis 的命令来操作 Redis 服务器，如下所示。
+进入命令行工具后，就可通过 Redis 的命令来操作 Redis 服务器
 
 ```shell
 127.0.0.1:6379> auth yourpass
