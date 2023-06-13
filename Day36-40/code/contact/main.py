@@ -158,9 +158,9 @@ def find_contacters_by_name(con):
 
 def find_contacters(con):
     while True:
-        print('1. 查看所有联系人')
-        print('2. 搜索联系人')
-        print('3. 退出查找')
+        print('- 查看所有联系人')
+        print('- 搜索联系人')
+        print('- 退出查找')
         choice = int(input('请输入: '))
         if choice == 1:
             find_all_contacters(con)
@@ -178,9 +178,9 @@ def main():
                           cursorclass=pymysql.cursors.DictCursor)
     while True:
         print('=====通讯录=====')
-        print('1. 新建联系人')
-        print('2. 查找联系人')
-        print('3. 退出系统')
+        print('- 新建联系人')
+        print('- 查找联系人')
+        print('- 退出系统')
         print('===============')
         choice = int(input('请选择: '))
         if choice == 1:

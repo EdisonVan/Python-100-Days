@@ -261,10 +261,10 @@ date: 2019-8-1
 
 “惯例”这个词指的是“习惯的做法，常规的办法，一贯的做法”，与这个词对应的英文单词叫“idiom”。由于Python跟其他很多编程语言在语法和使用上还是有比较显著的差别，因此作为一个Python开发者如果不能掌握这些惯例，就无法写出“Pythonic”的代码。下面总结了一些在Python开发中的惯用的代码。
 
-1. 让代码既可被导入又可被执行。
+- 让代码既可被导入又可被执行。
    if __name__ == '__main__':
 
-2. 用下面的方式判断逻辑“真”或“假”。
+- 用下面的方式判断逻辑“真”或“假”。
    if x:
    if not x:
 ```
@@ -286,47 +286,47 @@ hexo server -p 8000 -o
 
 可利用 GitHub 网站提供的[Pages 服务](https://pages.github.com/)来托管的博客。在 GitHub Pages 的首页上就有一个教程指导如何托管自己的网站，当然第一步得在 GitHub 上注册一个属于自己的账号，登录成功之后才能进行后续的操作。
 
-1. 根据自己的用户名创建一个仓库，仓库**一定**要取名为“用户名.github.io”。例如：我在 GitHub 上的用户名是 jackfrued，那么我的托管博客项目的仓库一定要命名为 jackfrued.github.io。
+- 根据自己的用户名创建一个仓库，仓库**一定**要取名为“用户名.github.io”。例如：我在 GitHub 上的用户名是 jackfrued，那么我的托管博客项目的仓库一定要命名为 jackfrued.github.io。
 
-   ![](./res/create-new-repo.png)
+  ![](./res/create-new-repo.png)
 
-2. 修改博客项目的配置文件`_config.yml`，配置使用 GitHub 来部署该博客项目。
+- 修改博客项目的配置文件`_config.yml`，配置使用 GitHub 来部署该博客项目。
 
-   ```Shell
-   vim _config.yml
-   ```
+  ```Shell
+  vim _config.yml
+  ```
 
-   ```YAML
-   # 省略上面的内容
-   # Deployment
-   ## Docs: https://hexo.io/docs/deployment.html
-   deploy:
-     type: git
-     repo: https://github.com/jackfrued/jackfrued.github.io.git
-     branch: master
-   ```
+  ```YAML
+  # 省略上面的内容
+  # Deployment
+  ## Docs: https://hexo.io/docs/deployment.html
+  deploy:
+    type: git
+    repo: https://github.com/jackfrued/jackfrued.github.io.git
+    branch: master
+  ```
 
-   上面的配置中，type 指定了使用 git 进行项目部署，repo 指定了部署项目的 git 仓库的 URL，这里使用的是 HTTPS 的地址，如果之前配置过密钥对也可使用 SSH 的地址，branch 指定了将代码同步到仓库中的哪一个分支，通常 master 分支就是发布项目最终工作成果的分支，也称为项目的主分支。
+  上面的配置中，type 指定了使用 git 进行项目部署，repo 指定了部署项目的 git 仓库的 URL，这里使用的是 HTTPS 的地址，如果之前配置过密钥对也可使用 SSH 的地址，branch 指定了将代码同步到仓库中的哪一个分支，通常 master 分支就是发布项目最终工作成果的分支，也称为项目的主分支。
 
-3. 安装名为`hexo-deployer-git`的部署器插件，通过该插件就能实现一键部署。
+- 安装名为`hexo-deployer-git`的部署器插件，通过该插件就能实现一键部署。
 
-   ```Shell
-   npm install hexo-deployer-git --save
-   ```
+  ```Shell
+  npm install hexo-deployer-git --save
+  ```
 
-4. 可使用下面的命令来实现一键部署到 GitHub。
+- 可使用下面的命令来实现一键部署到 GitHub。
 
-   ```Shell
-   hexo deploy -g
-   ```
+  ```Shell
+  hexo deploy -g
+  ```
 
-   或
+  或
 
-   ```Shell
-   hexo generate -d
-   ```
+  ```Shell
+  hexo generate -d
+  ```
 
-5. 接下来在浏览器中输入[jackfrued.github.io](https://jackfrued.github.io)就能够看到自己的博客，现在全世界的人都可通过这个 URL 来访问你的博客。大家是否注意到，访问你博客的这个 URL 就是刚才给仓库起的名字，因为你在 GitHub 上注册的用户名是独一无二的，所以这个域名也是全世界独一无二的。
+- 接下来在浏览器中输入[jackfrued.github.io](https://jackfrued.github.io)就能够看到自己的博客，现在全世界的人都可通过这个 URL 来访问你的博客。大家是否注意到，访问你博客的这个 URL 就是刚才给仓库起的名字，因为你在 GitHub 上注册的用户名是独一无二的，所以这个域名也是全世界独一无二的。
 
 ### 将博客绑定到自己的域名
 

@@ -7,6 +7,7 @@
 - 数字和字符串 - 整数 / 浮点数 / 复数 / 字符串 / 字符串基本操作 / 字符编码
 - 运算符 - 数学运算符 / 赋值运算符 / 比较运算符 / 逻辑运算符 / 身份运算符 / 运算符的优先级
 - 应用案例 - 华氏温度转换成摄氏温度 / 输入圆的半径计算周长和面积 / 输入年份判断是否是闰年
+
 - [分支结构](./Day01-15/03.分支结构.md)
 
 - 分支结构的应用场景 - 条件 / 缩进 / 代码块 / 流程图
@@ -115,7 +116,7 @@
 - 网络访问和管理
 - 其他相关内容
 
-# [数据库基础和进阶](./Day36-40)
+# [ ] [数据库基础和进阶](./Day36-40)
 
 - 关系型数据库概述
 - MySQL 的安装和使用
@@ -275,80 +276,108 @@
 
 ## 第 92 天：[Docker 容器详解](./Day91-100/92.Docker容器详解.md)
 
-1. Docker 简介
-2. 安装 Docker
-3. 使用 Docker 创建容器（Nginx、MySQL、Redis、Gitlab、Jenkins）
-4. 构建 Docker 镜像（Dockerfile 的编写和相关指令）
-5. 容器编排（Docker-compose）
-6. 集群管理（Kubernetes）
+- Docker 简介
+
+- 安装 Docker
+
+- 使用 Docker 创建容器（Nginx、MySQL、Redis、Gitlab、Jenkins）
+
+- 构建 Docker 镜像（Dockerfile 的编写和相关指令）
+
+- 容器编排（Docker-compose）
+
+- 集群管理（Kubernetes）
 
 ## 第 95 天：[使用 Django 开发商业项目](./Day91-100/95.使用Django开发商业项目.md)
 
 ### 项目开发中的公共问题
 
-1. 数据库的配置（多数据库、主从复制、数据库路由）
-2. 缓存的配置（分区缓存、键设置、超时设置、主从复制、故障恢复（哨兵））
-3. 日志的配置
-4. 分析和调试（Django-Debug-ToolBar）
-5. 好用的 Python 模块（日期计算、图像处理、数据加密、三方 API）
+- 数据库的配置（多数据库、主从复制、数据库路由）
+
+- 缓存的配置（分区缓存、键设置、超时设置、主从复制、故障恢复（哨兵））
+
+- 日志的配置
+
+- 分析和调试（Django-Debug-ToolBar）
+
+- 好用的 Python 模块（日期计算、图像处理、数据加密、三方 API）
 
 ### 项目中的重点难点剖析
 
-1. 使用缓存缓解数据库压力 - Redis
-2. 使用消息队列做解耦合和削峰 - Celery + RabbitMQ
+- 使用缓存缓解数据库压力 - Redis
+
+- 使用消息队列做解耦合和削峰 - Celery + RabbitMQ
 
 ## 第 96 天：[软件测试和自动化测试](Day91-100/96.软件测试和自动化测试.md)
 
 ### 单元测试
 
-1. 测试的种类
-2. 编写单元测试（`unittest`、`pytest`、`nose2`、`tox`、`ddt`、……）
-3. 测试覆盖率（`coverage`）
+- 测试的种类
+
+- 编写单元测试（`unittest`、`pytest`、`nose2`、`tox`、`ddt`、……）
+
+- 测试覆盖率（`coverage`）
 
 ### Django 项目部署
 
-1. 部署前的准备工作
-   - 关键设置（SECRET_KEY / DEBUG / ALLOWED_HOSTS / 缓存 / 数据库）
-   - HTTPS / CSRF_COOKIE_SECUR / SESSION_COOKIE_SECURE
-   - 日志相关配置
-2. Linux 常用命令回顾
-3. Linux 常用服务的安装和配置
-4. uWSGI/Gunicorn 和 Nginx 的使用
-   - Gunicorn 和 uWSGI 的比较
-     - 对于不需要大量定制化的简单应用程序，Gunicorn 是一个不错的选择，uWSGI 的学习曲线比 Gunicorn 要陡峭得多，Gunicorn 的默认参数就已经能够适应大多数应用程序。
-     - uWSGI 支持异构部署。
-     - 由于 Nginx 本身支持 uWSGI，在线上一般都将 Nginx 和 uWSGI 捆绑在一起部署，而且 uWSGI 属于功能齐全且高度定制的 WSGI 中间件。
-     - 在性能上，Gunicorn 和 uWSGI 其实表现相当。
-5. 使用虚拟化技术（Docker）部署测试环境和生产环境
+- 部署前的准备工作
+
+  - 关键设置（SECRET_KEY / DEBUG / ALLOWED_HOSTS / 缓存 / 数据库）
+  - HTTPS / CSRF_COOKIE_SECUR / SESSION_COOKIE_SECURE
+  - 日志相关配置
+
+- Linux 常用命令回顾
+
+- Linux 常用服务的安装和配置
+
+- uWSGI/Gunicorn 和 Nginx 的使用
+
+  - Gunicorn 和 uWSGI 的比较
+    - 对于不需要大量定制化的简单应用程序，Gunicorn 是一个不错的选择，uWSGI 的学习曲线比 Gunicorn 要陡峭得多，Gunicorn 的默认参数就已经能够适应大多数应用程序。
+    - uWSGI 支持异构部署。
+    - 由于 Nginx 本身支持 uWSGI，在线上一般都将 Nginx 和 uWSGI 捆绑在一起部署，而且 uWSGI 属于功能齐全且高度定制的 WSGI 中间件。
+    - 在性能上，Gunicorn 和 uWSGI 其实表现相当。
+
+- 使用虚拟化技术（Docker）部署测试环境和生产环境
 
 ### 性能测试
 
-1. AB 的使用
-2. SQLslap 的使用
-3. sysbench 的使用
+- AB 的使用
+
+- SQLslap 的使用
+
+- sysbench 的使用
 
 ### 自动化测试
 
-1. 使用 Shell 和 Python 进行自动化测试
-2. 使用 Selenium 实现自动化测试
-   - Selenium IDE
-   - Selenium WebDriver
-   - Selenium Remote Control
-3. 测试工具 Robot Framework 介绍
+- 使用 Shell 和 Python 进行自动化测试
+
+- 使用 Selenium 实现自动化测试
+
+  - Selenium IDE
+  - Selenium WebDriver
+  - Selenium Remote Control
+
+- 测试工具 Robot Framework 介绍
 
 ## 第 97 天：[电商网站技术要点剖析](./Day91-100/97.电商网站技术要点剖析.md)
 
 ## 第 98 天：[项目部署上线和性能调优](./Day91-100/98.项目部署上线和性能调优.md)
 
-1. MySQL 数据库调优
-2. Web 服务器性能优化
-   - Nginx 负载均衡配置
-   - Keepalived 实现高可用
-3. 代码性能调优
-   - 多线程
-   - 异步化
-4. 静态资源访问优化
-   - 云存储
-   - CDN
+- MySQL 数据库调优
+
+- Web 服务器性能优化
+
+  - Nginx 负载均衡配置
+  - Keepalived 实现高可用
+
+- 代码性能调优
+
+  - 多线程
+  - 异步化
+
+- 静态资源访问优化
+  - 云存储
+  - CDN
 
 ## 第 100 天：[Python 面试题实录](./Day91-100/100.Python面试题实录.md)

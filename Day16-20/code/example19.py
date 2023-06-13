@@ -5,9 +5,9 @@
 并发编程 - 加速程序执行 / 改善用户体验
 耗时间的任务都尽可能独立的执行，不要阻塞代码的其他部分
 - 多线程
-1. 创建Thread对象指定target和args属性并通过start方法启动线程
-2. 继承Thread类并重写run方法来定义线程执行的任务
-3. 创建线程池对象ThreadPoolExecutor并通过submit来提交要执行的任务
+- 创建Thread对象指定target和args属性并通过start方法启动线程
+- 继承Thread类并重写run方法来定义线程执行的任务
+- 创建线程池对象ThreadPoolExecutor并通过submit来提交要执行的任务
 第3种方式可通过Future对象的result方法在将来获得线程的执行结果
 也可通过done方法判定线程是否执行结束
 - 多进程
