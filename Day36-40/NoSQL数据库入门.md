@@ -523,7 +523,7 @@ systemctl start mongod
   }
   ```
 
-使用 MongoDB 可非常方便的配置数据复制，通过冗余数据来实现数据的高可用以及灾难恢复，也可通过数据分片来应对数据量迅速增长的需求。关于 MongoDB 更多的操作可查阅[官方文档](https://mongodb-documentation.readthedocs.io/en/latest/) ，同时推荐大家阅读 Kristina Chodorow 写的[《MongoDB 权威指南》](http://www.ituring.com.cn/book/1172)。
+使用 MongoDB 可非常方便的配置数据复制，通过冗余数据来实现数据的高可用以及灾难恢复，也可通过数据分片来应对数据量迅速增长的需求。关于 MongoDB 更多的操作可查阅[官方文档](https://mongodb-documentation.readthedocs.io/en/latest/)
 
 #### 在 Python 程序中操作 MongoDB
 
